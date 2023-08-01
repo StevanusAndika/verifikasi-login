@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifikasi Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-vector/20191003/ourmid/pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_1786166.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>Verifikasi Login</header>
+        <div class="input_field_captcha_box">
+            <input type="text" id="captchatextbox" value="" disabled>
+            <button class="refresh_button" onclick="refreshbtnclick()">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+        </div>
+        <div class="input_field_captcha_input">
+            <input type="text" id="captchainputbox" placeholder="Verifikasi login anda disini..." onkeyup="captchakeyupvalidate()">
+        </div>
+        <div class="message">Masukkan Kode Verifikasi dengan benar</div>
+        <div class="input_field button disabled"></div>
+        <button onclick="submitbtnclick()" id="submitbutton">Kirim</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
